@@ -1,8 +1,13 @@
 \documentclass{article}
+\usepackage{tgpagella}
 \usepackage[utf8]{inputenc}
-\usepackage{url, harvard}
+\usepackage{url}
 \usepackage[english]{babel}
-\usepackage{natbib}
+\usepackage[colorlinks]{hyperref}
+\usepackage{csquotes}
+\usepackage[noibid,authordate,isbn=false,hyperref=true,compresspages=true,doi=only]{biblatex-chicago}
+
+\addbibresource{ref.bib}
 
 \title{References from the 4 papers}
 \author{Your name here}
@@ -12,7 +17,5 @@
 
 \nocite{*}
 
-\bibliographystyle{chicago-apsr}
-\setcitestyle{aysep={}}
-\bibliography{ref}
+\printbibliography
 \end{document}
